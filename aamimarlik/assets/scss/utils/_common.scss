@@ -1,0 +1,679 @@
+/* === Scrollbar scss (index 01) === */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* === positioning scss (index 02) === */
+.rr-pos-rel {
+  position: relative;
+}
+
+.rr-pos-abs {
+  position: absolute;
+}
+
+.rr-ov-hidden {
+  overflow: hidden;
+}
+
+
+/* === Background scss (index 04) === */
+.rr-bg-primary {
+  background-color: var(--primary);
+}
+
+.rr-bg-gray {
+  background-color: #EEEEEE;
+}
+
+.rr-bg-light {
+  background-color: #FAFAFA;
+}
+
+.rr-bg-light-gray {
+  background-color: #EDECE8;
+}
+
+hr {
+  margin: 0;
+  border-top: 1px solid rgb(17 17 17 / 10%);
+  opacity: 1;
+}
+
+/* === Parallax view scss (index 05) === */
+.parallax-view {
+  overflow: hidden;
+
+  &__content {
+    padding: 25px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    p {
+      color: #111;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.48px;
+    }
+  }
+}
+
+.go-down {
+  width: 28px;
+  height: 28px;
+  background-color: var(--primary);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 50%;
+
+  @include dark {
+    color: var(--black);
+  }
+
+}
+
+/* === Section spacing  scss (index 07) === */
+.section-spacing {
+  padding-top: 170px;
+  padding-bottom: 170px;
+
+  @media #{$xxl} {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media #{$xl} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media #{$md} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-spacing-130 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  @media #{$xxl} {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media #{$xl} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media #{$md} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-spacing-140 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  @media #{$xxl} {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media #{$xl} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media #{$md} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-spacing-top-140 {
+  padding-top: 140px;
+
+  @media #{$xxl} {
+    padding-top: 100px;
+  }
+
+  @media #{$xl} {
+    padding-top: 80px;
+  }
+
+  @media #{$md} {
+    padding-top: 60px;
+  }
+}
+
+.section-spacing-top {
+  padding-top: 170px;
+
+  @media #{$xxl} {
+    padding-top: 190px;
+  }
+
+  @media #{$xl} {
+    padding-top: 80px;
+  }
+
+  @media #{$md} {
+    padding-top: 60px;
+  }
+}
+
+.section-spacing-bottom {
+  padding-bottom: 170px;
+
+  @media #{$xxl} {
+    padding-bottom: 190px;
+  }
+
+  @media #{$xl} {
+    padding-bottom: 80px;
+  }
+
+  @media #{$md} {
+    padding-bottom: 60px;
+  }
+}
+
+.section-spacing-bottom-130 {
+  padding-bottom: 130px;
+
+  @media #{$xl} {
+    padding-bottom: 80px;
+  }
+
+  @media #{$md} {
+    padding-bottom: 60px;
+  }
+}
+
+.section-spacing-top-130 {
+  padding-top: 130px;
+
+  @media #{$xl} {
+    padding-top: 80px;
+  }
+
+  @media #{$md} {
+    padding-top: 60px;
+  }
+}
+
+.mt-246 {
+  margin-top: 246px;
+
+  @media #{$xxl} {
+    margin-top: 190px;
+  }
+
+  @media #{$xl} {
+    margin-top: 80px;
+  }
+
+  @media #{$md} {
+    margin-top: 60px;
+  }
+}
+
+/* === ontainer styling with full HD support  scss (index 08) === */
+.container {
+  --bs-gutter-x: 30px;
+
+  &.full-hd {
+    @media (min-width: 1600px) {
+      max-width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.rr-container-1650 {
+  max-width: 1650px;
+}
+
+.rr-container-1850 {
+  max-width: 1850px;
+}
+
+.rr-container-1890 {
+  max-width: 1890px;
+}
+
+.rr-container-1270 {
+  max-width: 1270px;
+}
+
+.rr-container-1820 {
+  max-width: 1820px;
+}
+
+.rr-container-1790 {
+  max-width: 1790px;
+}
+
+/* ===Inverted scss (index 09) === */
+.text-invert>div {
+  background-image: linear-gradient(to right,
+      var(--primary) 50%,
+      #CDC9C6 51%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* ===Side info and offcanvas scss (index 10) === */
+.offcanvas-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.offcanvas-overlay.overlay-open {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.side-info-close {
+  font-size: 20px;
+  padding: 0;
+  transition: all 0.3s linear;
+  background-color: transparent;
+  color: var(--black);
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  line-height: 38px;
+
+  @include dark {
+    border-color: var(--white);
+    color: var(--white);
+  }
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+.side-info {
+  background: var(--white) none repeat scroll 0 0;
+  padding: 40px 45px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 100%;
+  transform: translateX(calc(100% + 80px));
+  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  z-index: 9999;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+
+  @include dark {
+    background-color: #1F1F1F;
+  }
+
+  @media #{$lg} {
+    width: 460px;
+  }
+
+  @media #{$xs} {
+    width: 280px;
+    padding: 30px 20px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar */
+  }
+
+  &.info-open {
+    opacity: 1;
+    transform: (translateX(0));
+    /* Show side info */
+  }
+}
+
+/* === Offset header scss (index 11) === */
+.offset {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo {
+    width: 95px;
+
+    @media #{$xs} {
+      width: 95px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-button {
+    margin-top: 40px;
+
+    @media (min-width: 576px) {
+      display: none;
+    }
+  }
+}
+
+/* === Offset widget box scss (index 12) === */
+.offset-widget-box {
+  margin-top: 40px;
+
+  .title {
+    font-size: 24px;
+    line-height: 1.33;
+    margin-bottom: 15px;
+
+    @media #{$xxl} {
+      margin-bottom: 22px;
+    }
+  }
+
+  .contact-meta>*:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    span {
+      color: var(--primary);
+      font-weight: 500;
+
+      a {
+        &:hover {
+          color: var(--secondary);
+        }
+      }
+    }
+
+    .icon {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      display: inline-flex;
+      border: 1px solid var(--border);
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: var(--primary);
+    }
+  }
+}
+
+/* ===Mobile menu customization scss (index 13) === */
+.mobile-menu {
+  margin-top: 40px;
+
+  &.mean-container {
+    .mean-nav>ul {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      list-style-type: none;
+      display: block !important;
+
+      >li:last-child>a {
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    .mean-nav {
+      background: none;
+      margin-top: 0;
+
+      .new {
+        font-size: 10px;
+        font-weight: 600;
+        background: #FFA38E;
+        color: #999999;
+        padding: 3px 7px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+      }
+
+      ul li {
+        a {
+          width: 100%;
+          padding: 15px 0;
+          padding-inline-start: 0px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1;
+          color: var(--primary);
+          text-transform: capitalize;
+          border-top: 1px solid var(--border);
+          display: flex;
+          gap: 8px;
+          justify-content: flex-start;
+          align-items: center;
+          outline: none;
+          transform: translateY(var(--y)) translateZ(0);
+          transition: transform .4s ease, box-shadow .4s ease;
+          box-sizing: border-box;
+          opacity: 1;
+
+          @media #{$sm} {
+            font-size: 20px;
+          }
+
+          &:hover {
+            color: var(--primary);
+          }
+
+          &.mean-expand {
+            width: 100%;
+            height: 48px;
+            justify-content: end;
+            font-weight: 300;
+            border: none !important;
+            background-color: transparent;
+
+            @media #{$sm} {
+              height: 50px;
+            }
+
+            &:hover {
+              background: rgba(255, 255, 255, .1);
+              opacity: 1;
+            }
+          }
+        }
+
+        li {
+          &:first-child {
+            border-top: 1px solid var(--border);
+          }
+
+          a {
+            font-size: 16px;
+            text-transform: capitalize;
+            border-top: none !important;
+            padding: 12px 0;
+            padding-inline-start: 15px;
+
+            &.mean-expand {
+              height: 58px;
+
+              @media #{$md} {
+                height: 25px;
+              }
+
+              @media #{$sm} {
+                height: 22px;
+              }
+            }
+          }
+
+          li {
+            &:last-child {
+              border-bottom: 1px solid var(--border);
+            }
+
+            a {
+              padding-left: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .mean-bar {
+      padding-bottom: 30px;
+      background: none;
+      max-height: auto;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+
+    a.meanmenu-reveal {
+      display: none !important;
+    }
+  }
+}
+
+/* === Sticky header scss (index 14) === */
+.header-sticky {
+  transition: all 0.5s;
+}
+
+.transformed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 800;
+  transform: translateY(-100%);
+
+  .header-area__inner {
+    height: 80px;
+  }
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 800;
+  background-color: #FFFFFF;
+  transform: translateY(0%);
+}
+
+/* === inverted text scss (index 15) === */
+.text-invert>div {
+  background-image: linear-gradient(to right,
+      var(--primary) 50%,
+      rgba(17, 17, 17, 0.30) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.underline {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  position: relative;
+  padding-bottom: 4px;
+  display: inline-block;
+  color: var(--primary);
+  letter-spacing: -0.48px;
+  font-family: var(--font_bai);
+
+  &::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    height: 1.5px;
+    position: absolute;
+    transition: all 0.3s;
+    background-color: currentColor;
+  }
+
+  &:hover {
+    &::before {
+      width: 0;
+    }
+  }
+}
+
+
+/* === image reveal scss (index 15) === */
+.reveal {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+/* === rr--hover-img canvas (Home) === */
+.rr--hover-img canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,215 @@
+/* ===portfolio-details  (Home 08) === */
+.portfolio-details__inner {
+    padding-top: 65px;
+    padding-bottom: 70px;
+
+    .section-title-wrapper {
+        display: flex;
+        margin-bottom: 140px;
+        align-items: flex-end;
+        max-width: 1346px;
+        gap: 30px;
+        justify-content: space-between;
+
+        @media #{$lg} {
+            margin-bottom: 100px;
+        }
+
+        @media #{$md} {
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 500;
+            max-width: 850px;
+            line-height: 32px;
+            color: var(--primary);
+            letter-spacing: -1.5px;
+
+            @media #{$xs} {
+                font-size: 25px;
+            }
+
+            span {
+                color: #999999;
+            }
+        }
+
+        .sub-title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: var(--primary);
+            letter-spacing: -0.48px;
+        }
+    }
+}
+
+.portfolio-details__wrapper {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 850px 1fr;
+
+    @media #{$xl} {
+        grid-template-columns: 650px 1fr;
+    }
+
+    @media #{$lg} {
+        grid-template-columns: 470px 1fr;
+    }
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-details__media {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .portfolio-details {
+
+        &__content {
+            gap: 30px;
+            display: grid;
+            grid-template-columns: 355px 1fr;
+
+            @media #{$xxl} {
+                grid-template-columns: auto 1fr;
+            }
+
+            @media #{$xs} {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &__info {
+            &-item {
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+
+            span {
+                font-size: 16px;
+                display: inline;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 2px;
+                letter-spacing: -0.48px;
+                color: #999;
+            }
+
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                color: var(--primary);
+                letter-spacing: -0.48px;
+            }
+
+        }
+
+        &__overview {
+
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 18px;
+                color: var(--primary);
+                letter-spacing: -0.48px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            .list {
+                margin-top: 150px;
+                margin-left: 20px;
+
+                @media #{$lg} {
+                    margin-top: 100px;
+                }
+
+                @media #{$md} {
+                    margin-top: 60px;
+                }
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-bottom: 18px;
+                    color: var(--primary);
+                    display: inline-block;
+                    letter-spacing: -0.48px;
+                    margin-left: -18px;
+                }
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 12px;
+                    }
+
+                    &:first-child {
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.portfolio-gallery__inner {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 130px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media #{$xl} {
+        margin-bottom: 100px;
+    }
+
+    @media #{$md} {
+        margin-bottom: 60px;
+    }
+
+    @media #{$xs} {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    >* {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:nth-child(3) {
+            width: 900px;
+
+            @media #{$xl} {
+                width: 100%;
+            }
+        }
+    }
+
+    .span-2 {
+        grid-column: span 2;
+
+        @media #{$sm} {
+            grid-column: auto;
+        }
+    }
+
+}

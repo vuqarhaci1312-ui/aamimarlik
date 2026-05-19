@@ -1,0 +1,182 @@
+/* === Font Family scss (index 01) === */
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet');
+
+/* === Tartuffo Trial scss (index 02) === */
+@font-face {
+  font-family: "Tartuffo_Trial-Regular";
+  src: url('../fonts/Tartuffo_Trial-RegularItalic.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Tartuffo_Trial-Regular";
+  src: url('../fonts/Tartuffo_Trial-Light.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Tartuffo_Trial-Regular";
+  src: url('../fonts/Tartuffo_Trial-Thin.otf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Granola";
+  src: url('../fonts/Granola.otf');
+}
+
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url('../fonts/BDOGrotesk-Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Suisse Int";
+  src: url('../fonts/fonnts.com-Suisse_Intl_Book.ttf');
+  font-weight: 450;
+}
+
+
+
+
+:root {
+  --font_bai: "Bai Jamjuree", sans-serif;
+  --font_granola: "Granola";
+  --font_bdo-grotsk: "BDO Grotesk";
+  --font_suisse-int: "Suisse Int";
+  --font_tartuffotrial: "Tartuffo_Trial-Regular";
+  --font_awesome: 'Font Awesome 6 Pro';
+
+}
+
+/* === Defalut Style scss (index 03) === */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font_bai);
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.48px;
+  color: var(--secondary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  color: var(--primary);
+  line-height: 1.22;
+  font-family: var(--font_bai);
+  font-weight: 500;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: inherit;
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+video,
+iframe,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.medium {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* === Gutter scss (index 03) === */
+@media #{$sm} {
+  .g-0 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .row.g-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}

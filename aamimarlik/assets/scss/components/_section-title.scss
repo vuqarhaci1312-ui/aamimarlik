@@ -1,0 +1,228 @@
+/* === section-title scss (Home 01) === */
+.section-title__wrapper {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 430px 810px 1fr;
+
+    @media #{$xxl} {
+        grid-template-columns: 400px 650px 1fr;
+    }
+
+    @media #{$xl} {
+        grid-template-columns: 300px 500px 1fr;
+    }
+
+    @media #{$lg} {
+        grid-template-columns: 130px 460px 1fr;
+    }
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+    }
+
+    @media #{$xs} {
+        gap: 20px;
+    }
+
+    .section-sub-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+        line-height: 20px;
+        margin-left: 50px;
+        position: relative;
+        letter-spacing: -0.48px;
+
+        &::before {
+            left: 0;
+            top: 50%;
+            width: 40px;
+            content: "";
+            height: 1px;
+            position: absolute;
+            background: var(--primary);
+            transform: translate(-50px, 0px);
+        }
+    }
+
+    .section-title {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: -2.5px;
+
+        @media #{$md} {
+            margin-top: 0;
+            letter-spacing: 0;
+
+            br {
+                display: none;
+            }
+        }
+
+        @media #{$xs} {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        span {
+            font-family: var(--font_tartuffotrial);
+        }
+    }
+
+    .desc {
+        margin-top: 10px;
+
+        @media #{$md} {
+            margin-top: 0;
+        }
+    }
+}
+
+.section-subtitle {
+    &__wrap {
+
+
+        &.overview {
+            @media #{$md} {
+                margin-top: 0;
+                padding-left: 10px;
+                white-space: nowrap;
+            }
+
+            @media #{$sm} {
+                margin-top: 20px;
+            }
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-weight: 450;
+            line-height: 20px;
+            color: var(--primary);
+            font-family: var(--font_suisse-int);
+        }
+
+        .white {
+            color: var(--white);
+        }
+    }
+}
+
+.section-title__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$xs} {
+        flex-wrap: wrap;
+    }
+
+    &.project {
+        padding: 105px 0 80px;
+
+        @media #{$xs} {
+            padding: 40px 0;
+        }
+    }
+
+    &.work {
+        display: block;
+        text-align: center;
+
+    }
+
+    .mission-title {
+        display: block;
+        text-align: center;
+        padding-bottom: 131px;
+        text-align: center;
+        margin: 0 auto;
+
+        @media #{$xs} {
+            padding-bottom: 60px;
+        }
+    }
+
+    .section-title {
+        font-weight: 300;
+        font-size: 150px;
+        line-height: 145px;
+        color: var(--black);
+        text-transform: uppercase;
+        font-family: var(--font_tartuffotrial);
+
+        span {
+            display: block;
+            text-align: right;
+            margin-top: -15px;
+            padding-left: 530px;
+
+            @media #{$xl} {
+                padding-left: 264px;
+            }
+
+            @media #{$md} {
+                padding-left: 213px;
+            }
+
+            @media #{$sm} {
+                padding-left: 152px;
+            }
+
+            @media #{$xs} {
+                padding-left: 0;
+                text-align: left;
+            }
+        }
+
+        @media #{$xl} {
+            font-size: 75px;
+            line-height: 100px;
+        }
+
+        @media #{$lg} {
+            font-size: 60px;
+            line-height: 88px;
+        }
+
+        @media #{$sm} {
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        @media #{$xs} {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+
+    .number-text {
+        font-weight: 300;
+        font-size: 150px;
+        line-height: 24px;
+        padding-top: 55px;
+        color: var(--black);
+        letter-spacing: -0.03em;
+        font-family: var(--font_tartuffotrial);
+
+        @media #{$xxl} {
+            font-size: 108px;
+        }
+
+        @media #{$xl} {
+            font-size: 75px;
+        }
+
+        @media #{$lg} {
+            font-size: 60px;
+        }
+
+        @media #{$sm} {
+            font-size: 50px;
+        }
+
+        @media #{$xs} {
+            font-size: 35px;
+        }
+    }
+}
