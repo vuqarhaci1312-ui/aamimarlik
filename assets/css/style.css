@@ -23816,4 +23816,68 @@ section {
   .portfolio .swiper-slide-next .portfolio__item .sub-title {
     transform: translateX(0px);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ==========================================================================
+   Logo Styling Overrides for AA Mimarlik
+   ========================================================================== */
+.header__logo, 
+.header__logo a, 
+.vcard-nav .logo, 
+.vcard-mobile-menu .logo, 
+.copyright__logo,
+.offset-logo,
+.offset-logo a {
+  display: flex !important;
+  align-items: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.header__logo img, 
+.vcard-nav .logo img, 
+.vcard-mobile-menu .logo img, 
+.copyright__logo img,
+.offset-logo img {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: auto !important;
+  max-width: none !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Header logo size (normal/transparent state) */
+.header__logo img {
+  height: 80px !important;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.4)) !important;
+}
+
+/* Footer logo size */
+.copyright__logo img {
+  height: 110px !important;
+}
+
+/* Vcard logo size */
+.vcard-nav .logo img, 
+.vcard-mobile-menu .logo img {
+  height: 75px !important;
+}
+
+/* Offset sidebar menu logo */
+.offset-logo img {
+  height: 70px !important;
+}
+
+/* Scrolled / Sticky Header State: Change white logo to black on white backgrounds */
+.sticky .header__logo img,
+.transformed .header__logo img,
+.scrolled .header__logo img,
+.header-area-2.sticky .header__logo img,
+.header-area-3.sticky .header__logo img,
+.header-area-4.sticky .header__logo img,
+.header-area-7.sticky .header__logo img,
+.header-sticky.sticky .header__logo img {
+  filter: brightness(0) !important;
+}
+/*# sourceMappingURL=style.css.map */
