@@ -213,6 +213,27 @@
     &__thumb {
         overflow: hidden;
         position: relative;
+        width: 100%;
+        height: 480px;
+
+        @media #{$md} {
+            height: 400px;
+        }
+
+        @media #{$sm} {
+            height: 340px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
 
         &:hover {
             .project-6__content {
@@ -493,6 +514,14 @@
     }
 
     &--home {
+        .project-6__slider .swiper-slide {
+            height: auto;
+        }
+
+        .project-6__item {
+            width: 100%;
+        }
+
         .project-6__content {
             display: none;
         }

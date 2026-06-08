@@ -243,6 +243,18 @@
         meanMenuCloseSize: '28px',
     });
 
+    /* === Services dropdown: parent link navigates to service-11.html; submenu via hover === */
+
+    $(document).on('click', function () {
+        if ($(window).width() >= 1200) {
+            $('.main-menu > ul > li.menu-item-has-children').removeClass('submenu-open');
+        }
+    });
+
+    $('.main-menu ul.dp-menu').on('click', function (e) {
+        e.stopPropagation();
+    });
+
     //  Home 01 menu Animaton 
     if (document.querySelectorAll(".side-info-4").length > 0) {
         const menuToggle = document.querySelector(".menu-toggle");
