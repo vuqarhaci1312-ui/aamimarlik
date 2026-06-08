@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="az">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AA Mimarlıq - Ekspo Stend və Memarlıq Şirkəti">
+  <meta name="description" content="AA MEMARLIQ - Ekspo Stend və Memarlıq Şirkəti">
 
   <title>Ana Səhifə - AA MEMARLIQ</title>
 
@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body data-page="index">
 
   <div class="loader-wrap">
     <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
@@ -39,13 +39,13 @@
         <span>A</span>
         <span>&nbsp;</span>
         <span>M</span>
-        <span>i</span>
-        <span>m</span>
-        <span>a</span>
-        <span>r</span>
-        <span>l</span>
-        <span>ı</span>
-        <span>q</span>
+        <span>E</span>
+        <span>M</span>
+        <span>A</span>
+        <span>R</span>
+        <span>L</span>
+        <span>I</span>
+        <span>Q</span>
       </div>
     </div>
   </div>
@@ -68,8 +68,14 @@
                 <img class="show-light" src="assets/imgs/about/aalogo-white.png" alt="site logo" style="height: 55px; width: auto;">
               </a>
             </div>
-            <h6>Baku Expo Center ilə rəsmi müqaviləli olaraq fəaliyyət göstərən peşəkar ekspo stend və memarlıq şirkəti.</h6>
-            <span class="date">Yaranma: 2019</span>
+            <h6 data-i18n="sidebar.tagline">Baku Expo Center ilə rəsmi müqaviləli olaraq fəaliyyət göstərən peşəkar ekspo stend və memarlıq şirkəti.</h6>
+            <div class="lang-switcher" role="group" aria-label="Dil">
+  <button type="button" class="lang-switcher__btn is-active" data-lang="az">AZ</button>
+  <button type="button" class="lang-switcher__btn" data-lang="tr">TR</button>
+  <button type="button" class="lang-switcher__btn" data-lang="en">EN</button>
+  <button type="button" class="lang-switcher__btn" data-lang="ru">RU</button>
+</div>
+            <span class="date" data-i18n="sidebar.founded">Yaranma: 2019</span>
           </div>
           <div class="mobile-menu d-block d-xl-none "></div>
 
@@ -77,29 +83,23 @@
 
             <div class="contact-meta">
               <div class="contact-item">
-                <h6 class="title">Sosial Media</h6>
+                <h6 class="title" data-i18n="sidebar.social">Sosial Media</h6>
                 <ul class="socail-media">
-                  <li><a href="https://www.facebook.com/">Facebook</a></li>
-                  <li><a href="https://x.com/?lang=en">Twitter</a></li>
-                  <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-                  <li><a href="https://www.behance.net/">Behance</a></li>
-                  <li><a href="https://dribbble.com/">Dribbble</a></li>
-                  <li><a href="https://www.instagram.com/">Instagram</a></li>
-                  <li><a href="https://www.youtube.com/">YouTube</a></li>
+                  <li><a href="https://www.instagram.com/aalmemarliq?utm_source=qr&igsh=anpmMm5qNmp3ZnI1" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  <li><a href="https://www.tiktok.com/@aa.memarilq?_r=1&_t=ZS-96zAPi5Gpe8" target="_blank" rel="noopener noreferrer">TikTok</a></li>
                 </ul>
               </div>
               <div class="contact-item">
-                <h6 class="title">Menyu</h6>
+                <h6 class="title" data-i18n="sidebar.menu">Menyu</h6>
                 <ul class="nav-list">
-                  <li><a href="/">Ana Səhifə</a></li>
-                  <li><a href="/haqqimizda">Haqqımızda</a></li>
-                  <li><a href="/xidmetlerimiz">Xidmətlər</a></li>
-                  <li><a href="/#layiheler">Layihələr</a></li>
-                  <li><a href="/elaqe">Əlaqə</a></li>
+                  <li><a href="/" data-i18n="nav.home">Ana Səhifə</a></li>
+                  <li><a href="/haqqimizda" data-i18n="nav.about">Haqqımızda</a></li>
+                  <li><a href="/xidmetlerimiz" data-i18n="nav.services_short">Xidmətlər</a></li>
+                  <li><a href="/elaqe" data-i18n="nav.contact">Əlaqə</a></li>
                 </ul>
               </div>
               <div class="contact-item">
-                <h6 class="title">Bizə yazın</h6>
+                <h6 class="title" data-i18n="sidebar.write_us">Bizə yazın</h6>
                 <div class="info">
                   <a href="mailto:info@aamimarlik.az">info@aamimarlik.az</a>
                 </div>
@@ -107,7 +107,7 @@
             </div>
           </div>
           <button id="side-info-4-close" class="side-info-close">
-            Bağla<i class="fas fa-times"></i>
+            <span data-i18n="btn.close">Bağla</span><i class="fas fa-times"></i>
           </button>
         </div>
       </div>
@@ -133,23 +133,29 @@
               <div class="header__nav-2 header__nav-7">
                 <nav class="main-menu">
       <ul>
-        <li><a href="/">Ana Səhifə</a></li>
-        <li><a href="/haqqimizda">Haqqımızda</a></li>
+        <li><a href="/" data-i18n="nav.home">Ana Səhifə</a></li>
+        <li><a href="/haqqimizda" data-i18n="nav.about">Haqqımızda</a></li>
         <li class="menu-item-has-children menu-item-services">
-          <a href="/xidmetlerimiz">Xidmətlərimiz</a>
+          <a href="/xidmetlerimiz" data-i18n="nav.services">Xidmətlərimiz</a>
           <ul class="dp-menu">
-            <li><a href="/interyer-eksteryer">İnteryer və Eksteryer</a></li>
-            <li><a href="/memarliq-layiheleri">Memarlıq Layihələri</a></li>
-            <li><a href="/sergi-stendleri">Sərgi Stendləri</a></li>
-            <li><a href="/layihe-idareetmesi">Layihə İdarəetməsi</a></li>
+            <li><a href="/interyer-eksteryer" data-i18n="nav.svc_interyer">İnteryer və Eksteryer</a></li>
+            <li><a href="/memarliq-layiheleri" data-i18n="nav.svc_memarliq">Memarlıq Layihələri</a></li>
+            <li><a href="/sergi-stendleri" data-i18n="nav.svc_sergi">Sərgi Stendləri</a></li>
+            <li><a href="/layihe-idareetmesi" data-i18n="nav.svc_pm">Layihə İdarəetməsi</a></li>
           </ul>
         </li>
-        <li><a href="/faq">FAQ</a></li>
-        <li><a href="/elaqe">Əlaqə</a></li>
+        <li><a href="/faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="/elaqe" data-i18n="nav.contact">Əlaqə</a></li>
       </ul>
     </nav>
               </div>
               <div class="header-right">
+                <div class="lang-switcher" role="group" aria-label="Dil">
+  <button type="button" class="lang-switcher__btn is-active" data-lang="az">AZ</button>
+  <button type="button" class="lang-switcher__btn" data-lang="tr">TR</button>
+  <button type="button" class="lang-switcher__btn" data-lang="en">EN</button>
+  <button type="button" class="lang-switcher__btn" data-lang="ru">RU</button>
+</div>
                 <div class="header__navicon">
                   <a class="number" href="tel:994502000000">+994 50 200 00 00</a>
                   <div class="side-toggle desktop-button menu-toggle d-none d-xl-block">
@@ -185,12 +191,12 @@
               <div class="hero-4__wrapper">
                 <div class="hero-4__box">
                   <div class="hero-4__content-left">
-                    <h6 class="sub-title">Bakı, Azərbaycan.</h6>
+                    <h6 class="sub-title" data-i18n="index.hero.location">Bakı, Azərbaycan.</h6>
                     <a class="btn-circle video-popup" href="https://www.youtube.com/watch?v=ekwc2O3RMNo">
                       <img src="assets/imgs/about/photohero.jpeg" alt="image not found" style="width: 380px; height: 209px; object-fit: cover; max-width: 100%;">
                       <span class="icon"><i class="fa-solid fa-play"></i></span>
                     </a>
-                    <p class="desc">Müştəri məmnuniyyətinə əsaslanaraq müasir sərgi stendləri, landşaftlar, eksteryer və interyerlər dizayn edirik.</p>
+                    <p class="desc" data-i18n="index.hero.desc">Müştəri məmnuniyyətinə əsaslanaraq müasir sərgi stendləri, landşaftlar, eksteryer və interyerlər dizayn edirik.</p>
                     <div class="sheir">
                       <a href="/xidmetlerimiz"> <img src="assets/imgs/icon/icon-9.svg" alt="image not found"></a>
                     </div>
@@ -198,12 +204,12 @@
                 </div>
                 <div class="hero-4__box">
                   <div class="hero-4__content-right">
-                    <h6 class="sub-title">Məkanların Həyata İlham Verdiyi Yer</h6>
-                    <h1 class="title">AA MİMARLIQ</h1>
+                    <h6 class="sub-title" data-i18n="index.hero.subtitle">Məkanların Həyata İlham Verdiyi Yer</h6>
+                    <h1 class="title">AA MEMARLIQ</h1>
                     <div class="exterior">
-                      <h2 class="title">İnteryer</h2> <span class="shape"><img src="assets/imgs/shape/shape-4.png"
+                      <h2 class="title" data-i18n="index.hero.interior">İnteryer</h2> <span class="shape"><img src="assets/imgs/shape/shape-4.png"
                           alt="imgage not found"></span>
-                      <span class="sub-title">Və <br> Eksteryer <br> Dizayn firması</span>
+                      <span class="sub-title" data-i18n="index.hero.exterior_html" data-i18n-html>Və <br> Eksteryer <br> Dizayn firması</span>
                     </div>
                     <a class="arrow-down" href="#about"><i class="fa-solid fa-arrow-down"></i></a>
                   </div>
@@ -227,16 +233,16 @@
                   <div class="about-us-4__content">
                     <div class="section-title-4__wrapper">
                       <div>
-                        <h2 class="sub-title">ŞİRKƏTİMİZ</h2>
+                        <h2 class="sub-title" data-i18n="index.about.subtitle">ŞİRKƏTİMİZ</h2>
                       </div>
-                      <h3 class="title rr_title_anim">AA MİMARLIQ hər <br> layihəni <span>özünəməxsus sənət <br> əsərinə çevirir.</span>
+                      <h3 class="title rr_title_anim" data-i18n="index.about.title_html" data-i18n-html>AA MEMARLIQ hər <br> layihəni <span>özünəməxsus sənət <br> əsərinə çevirir.</span>
                       </h3>
-                      <p class="desc-text" style="margin-top: 25px; color: #7a7a7a; font-size: 16px; line-height: 1.8; font-weight: 400;">
-                        AA MİMARLIQ Ekspo Stend Şirkəti 2019-cu ildən bəri Azərbaycanda fəaliyyət göstərir. Firmamız hər daim müştəri məmnuniyyətinə əsaslanaraq çalışır. Əhəmiyyətli sahələrimizdən biri də dekorasiya və dizayn işlərinin yerinə yetirilməsidir. Şirkətimiz Baku Expo Center ilə rəsmi müqaviləli olaraq xidmət göstərir və sərgi sektorunda 100-dən çox layihəyə öz imzasını atmışdır. Siz dəyərli müştərilərimizi ən yaxşı şəkildə tanıtmaq və bizə olan etibarınızı doğrultmaq üçün bütün komandamızla hər zaman xidmətinizdəyik.
+                      <p class="desc-text" data-i18n="index.about.desc" style="margin-top: 25px; color: #7a7a7a; font-size: 16px; line-height: 1.8; font-weight: 400;">
+                        AA MEMARLIQ Ekspo Stend Şirkəti 2019-cu ildən bəri Azərbaycanda fəaliyyət göstərir. Firmamız hər daim müştəri məmnuniyyətinə əsaslanaraq çalışır. Əhəmiyyətli sahələrimizdən biri də dekorasiya və dizayn işlərinin yerinə yetirilməsidir. Şirkətimiz Baku Expo Center ilə rəsmi müqaviləli olaraq xidmət göstərir və sərgi sektorunda 100-dən çox layihəyə öz imzasını atmışdır. Siz dəyərli müştərilərimizi ən yaxşı şəkildə tanıtmaq və bizə olan etibarınızı doğrultmaq üçün bütün komandamızla hər zaman xidmətinizdəyik.
                       </p>
                     </div>
                     <a href="/haqqimizda" class="rr-btn-primary btn-black-2" style="margin-top: 30px;">
-                      <span class="text">Ətraflı </span>
+                      <span class="text" data-i18n="btn.more">Ətraflı </span>
                       <i class="fa-regular fa-arrow-right-long"></i>
                     </a>
                   </div>
@@ -249,20 +255,20 @@
                     <div class="about-us-4__item">
                       <img src="assets/imgs/about/abouticon.jpg" alt="image not found">
 
-                      <h3 class="title">Müştəri Məmnuniyyəti.</h3>
-                      <p class="desc">Şirkətimiz hər daim müştəri məmnuniyyətinə əsaslanaraq çalışır və bizə olan güveninizi doğruldur.</p>
+                      <h3 class="title" data-i18n="index.about.item1_title">Müştəri Məmnuniyyəti.</h3>
+                      <p class="desc" data-i18n="index.about.item1_desc">Şirkətimiz hər daim müştəri məmnuniyyətinə əsaslanaraq çalışır və bizə olan güveninizi doğruldur.</p>
                     </div>
                     <div class="about-us-4__item">
                       <img src="assets/imgs/about/abouticon2.jpg" alt="image not found">
 
-                      <h3 class="title">Rəsmi Tərəfdaşlıq.</h3>
-                      <p class="desc">Baku Expo Center ilə rəsmi müqavilə əsasında sərgi stendlərinin qurulması xidmətini göstəririk.</p>
+                      <h3 class="title" data-i18n="index.about.item2_title">Rəsmi Tərəfdaşlıq.</h3>
+                      <p class="desc" data-i18n="index.about.item2_desc">Baku Expo Center ilə rəsmi müqavilə əsasında sərgi stendlərinin qurulması xidmətini göstəririk.</p>
                     </div>
                     <div class="about-us-4__item">
                       <img src="assets/imgs/about/abouticon3.jpg" alt="image not found">
 
-                      <h3 class="title">100-dən Çox Layihə.</h3>
-                      <p class="desc">Sərgi stendləri və dekorasiya işləri sahəsində 100-dən çox layihəyə öz imzamızı atmışıq.</p>
+                      <h3 class="title" data-i18n="index.about.item3_title">100-dən Çox Layihə.</h3>
+                      <p class="desc" data-i18n="index.about.item3_desc">Sərgi stendləri və dekorasiya işləri sahəsində 100-dən çox layihəyə öz imzamızı atmışıq.</p>
                     </div>
                   </div>
                 </div>
@@ -282,7 +288,7 @@
                     <img src="assets/imgs/about/phot1.jpg" alt="image not found">
                   </div>
                   <div class="content">
-                    <h3 class="title"><a href="/interyer-eksteryer">İnteryer.
+                    <h3 class="title" data-i18n="index.svc1_link_html" data-i18n-html><a href="/interyer-eksteryer">İnteryer.
                         Dizayn.
                         İncəsənət.</a></h3>
 
@@ -291,11 +297,11 @@
                         <path d="M1 35L18 18L35 1M35 1H13.3636M35 1V22.6364" stroke="#111111" stroke-width="1.4" />
                       </svg></a>
 
-                    <p class="desc">Məkanın funksionallığını və estetikasını artıraraq sizin üçün rahat daxili məkanlar dizayn edirik.</p>
+                    <p class="desc" data-i18n="index.svc1_desc">Məkanın funksionallığını və estetikasını artıraraq sizin üçün rahat daxili məkanlar dizayn edirik.</p>
                   </div>
                 </div>
                 <div class="icon"> <i class="fa-solid fa-plus-large"></i></div>
-                <h2 class="title">İnteryer <span>Dizaynı</span></h2>
+                <h2 class="title" data-i18n="index.svc1_title_html" data-i18n-html>İnteryer <span>Dizaynı</span></h2>
               </div>
               <div class="service-4__item">
                 <div class="media">
@@ -303,20 +309,20 @@
                     <img src="assets/imgs/about/phot2.jpg" alt="image not found">
                   </div>
                   <div class="content">
-                    <h3 class="title"><a href="/interyer-eksteryer">Ekspo.
+                    <h3 class="title" data-i18n="index.svc2_link_html" data-i18n-html><a href="/sergi-stendleri">Ekspo.
                         Stend.
                         Təqdimat.</a></h3>
 
-                    <a class="arrow" href="/interyer-eksteryer"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                    <a class="arrow" href="/sergi-stendleri"><svg xmlns="http://www.w3.org/2000/svg" width="36"
                         height="36" viewBox="0 0 36 36" fill="none">
                         <path d="M1 35L18 18L35 1M35 1H13.3636M35 1V22.6364" stroke="#111111" stroke-width="1.4" />
                       </svg></a>
 
-                    <p class="desc">Baku Expo Center-də brendinizin ən gözəl şəkildə təqdim edilməsi üçün sərgi stendləri qururuq.</p>
+                    <p class="desc" data-i18n="index.svc2_desc">Baku Expo Center-də brendinizin ən gözəl şəkildə təqdim edilməsi üçün sərgi stendləri qururuq.</p>
                   </div>
                 </div>
                 <div class="icon"> <i class="fa-solid fa-plus-large"></i></div>
-                <h2 class="title">Stend <span>Dizaynı</span></h2>
+                <h2 class="title" data-i18n="index.svc2_title_html" data-i18n-html>Stend <span>Dizaynı</span></h2>
               </div>
               <div class="service-4__item">
                 <div class="media">
@@ -324,20 +330,20 @@
                     <img src="assets/imgs/about/phot3.jpg" alt="image not found">
                   </div>
                   <div class="content">
-                    <h3 class="title"><a href="/interyer-eksteryer">Eksteryer.
+                    <h3 class="title" data-i18n="index.svc3_link_html" data-i18n-html><a href="/memarliq-layiheleri">Eksteryer.
                         Memarlıq.
                         Estetika.</a></h3>
 
-                    <a class="arrow" href="/interyer-eksteryer"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                    <a class="arrow" href="/memarliq-layiheleri"><svg xmlns="http://www.w3.org/2000/svg" width="36"
                         height="36" viewBox="0 0 36 36" fill="none">
                         <path d="M1 35L18 18L35 1M35 1H13.3636M35 1V22.6364" stroke="#111111" stroke-width="1.4" />
                       </svg></a>
 
-                    <p class="desc">Binaların müasir və gözəl çöl görünüşünün memarlıq standartlarına uyğun dizayn edilməsi.</p>
+                    <p class="desc" data-i18n="index.svc3_desc">Binaların müasir və gözəl çöl görünüşünün memarlıq standartlarına uyğun dizayn edilməsi.</p>
                   </div>
                 </div>
                 <div class="icon"> <i class="fa-solid fa-plus-large"></i></div>
-                <h2 class="title">Eksteryer <span>Dizaynı</span></h2>
+                <h2 class="title" data-i18n="index.svc3_title_html" data-i18n-html>Eksteryer <span>Dizaynı</span></h2>
               </div>
               <div class="service-4__item">
                 <div class="media">
@@ -345,7 +351,7 @@
                     <img src="assets/imgs/about/phot4.jpg" alt="image not found">
                   </div>
                   <div class="content">
-                    <h3 class="title"><a href="/interyer-eksteryer">Landşaft.
+                    <h3 class="title" data-i18n="index.svc4_link_html" data-i18n-html><a href="/interyer-eksteryer">Landşaft.
                         Peysaj.
                         Yaşıllıq.</a></h3>
 
@@ -354,11 +360,11 @@
                         <path d="M1 35L18 18L35 1M35 1H13.3636M35 1V22.6364" stroke="#111111" stroke-width="1.4" />
                       </svg></a>
 
-                    <p class="desc">Həyətyanı sahələriniz və parklarınız üçün təbiətlə vəhdət təşkil edən peysaj dizaynı.</p>
+                    <p class="desc" data-i18n="index.svc4_desc">Həyətyanı sahələriniz və parklarınız üçün təbiətlə vəhdət təşkil edən peysaj dizaynı.</p>
                   </div>
                 </div>
                 <div class="icon"> <i class="fa-solid fa-plus-large"></i></div>
-                <h2 class="title">Landşaft <span>Dizaynı</span></h2>
+                <h2 class="title" data-i18n="index.svc4_title_html" data-i18n-html>Landşaft <span>Dizaynı</span></h2>
               </div>
             </div>
           </div>
@@ -366,55 +372,70 @@
         <!--service-4 area end -->
 
         <!-- recent-work-4 area start -->
-        <section class="recent-work-4 rr-bg-gray section-spacing-130">
+        <section id="layiheler" class="recent-work-4 rr-bg-gray section-spacing-130">
           <div class="container rr-container-1820">
             <div class="recent-work-4__inner">
               <div class="section-title-4__wrapper">
-                <h2 class="title rr_title_anim">SON LAYİHƏLƏRİMİZ</h2>
+                <h2 class="title rr_title_anim" data-i18n="index.projects.title">SON LAYİHƏLƏRİMİZ</h2>
               </div>
 
               <div class="recent-work-4__wrapper">
                 <div class="recent-work-4__item">
                   <div class="media rr-ov-hidden">
-                    <img data-speed="0.7" src="assets/imgs/about/recent1.jpeg" alt="image not found" style="width: 100%; aspect-ratio: 1155 / 750; object-fit: cover;">
-                    <a class="arrow" href="/sergi-stendi-layihe"><i class="fa-light fa-arrow-right"></i></a>
+                    <img data-speed="0.7" src="assets/imgs/about/recent1.jpeg" alt="Premium Showroom İnteryeri" style="width: 100%; aspect-ratio: 1155 / 750; object-fit: cover;">
+                    <a class="arrow" href="/premium-showroom"><i class="fa-light fa-arrow-right"></i></a>
                   </div>
                   <div class="content">
                     <span class="number">/01.</span>
                     <div class="text">
-                      <h3 class="title"><a href="/sergi-stendi-layihe">Müasir Sərgi Stendi <br> Layihəsi</a></h3>
+                      <h3 class="title" data-i18n="index.projects.p1_title_html" data-i18n-html><a href="/premium-showroom">Premium Showroom <br> İnteryeri</a></h3>
                       <ul class="list">
-                        <li>EKSPO STENDİ</li>
+                        <li data-i18n="index.projects.p1_cat">KOMMERSİYA MƏKANI</li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="recent-work-4__item">
                   <div class="media rr-ov-hidden">
-                    <img data-speed="0.7" src="assets/imgs/about/recent2.jpeg" alt="image not found" style="width: 100%; aspect-ratio: 1155 / 750; object-fit: cover;">
-                    <a class="arrow" href="/sergi-stendi-layihe"><i class="fa-light fa-arrow-right"></i></a>
+                    <img data-speed="0.7" src="assets/imgs/ferdiyasayis/1000003649.jpg.jpeg" alt="Fərdi Yaşayış Evi İnteryeri" style="width: 100%; aspect-ratio: 1155 / 750; object-fit: cover;">
+                    <a class="arrow" href="/ferdi-yasayis-evi"><i class="fa-light fa-arrow-right"></i></a>
                   </div>
                   <div class="content">
                     <span class="number">/02.</span>
                     <div class="text">
-                      <h3 class="title"><a href="/sergi-stendi-layihe">Fərdi Yaşayış Evi <br> İnteryeri</a></h3>
+                      <h3 class="title" data-i18n="index.projects.p2_title_html" data-i18n-html><a href="/ferdi-yasayis-evi">Fərdi Yaşayış Evi <br> İnteryeri</a></h3>
                       <ul class="list">
-                        <li>DAXİLİ MƏKAN</li>
+                        <li data-i18n="index.projects.p2_cat">DAXİLİ MƏKAN</li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="recent-work-4__item">
                   <div class="media rr-ov-hidden">
-                    <img data-speed="0.7" src="assets/imgs/about/recent3.jpeg" alt="image not found" style="width: 100%; aspect-ratio: 1155 / 750; object-fit: cover;">
-                    <a class="arrow" href="/sergi-stendi-layihe"><i class="fa-light fa-arrow-right"></i></a>
+                    <img data-speed="0.7" src="assets/imgs/ofiss/1000003600.jpg.jpeg" alt="Müasir Ofis İnteryeri" style="width: 100%; aspect-ratio: 1155 / 750; object-fit: cover;">
+                    <a class="arrow" href="/muasir-ofis"><i class="fa-light fa-arrow-right"></i></a>
                   </div>
                   <div class="content">
                     <span class="number">/03.</span>
                     <div class="text">
-                      <h3 class="title"><a href="/sergi-stendi-layihe">Müasir Eksteryer <br> Və Landşaft Dizaynı</a></h3>
+                      <h3 class="title" data-i18n="index.projects.p3_title_html" data-i18n-html><a href="/muasir-ofis">Müasir Ofis <br> İnteryeri</a></h3>
                       <ul class="list">
-                        <li>ÇÖL MƏKAN VƏ PEYSAJ</li>
+                        <li data-i18n="index.projects.p3_cat">OFİS DİZAYNI</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="recent-work-4__item">
+                  <div class="media rr-ov-hidden">
+                    <img data-speed="0.7" src="assets/imgs/sergistendleri/WhatsApp Image 2026-05-17 at 20.47.06.jpeg" alt="Sərgi Stendləri" style="width: 100%; aspect-ratio: 1155 / 750; object-fit: cover;">
+                    <a class="arrow" href="/sergi-stendi-layihe"><i class="fa-light fa-arrow-right"></i></a>
+                  </div>
+                  <div class="content">
+                    <span class="number">/04.</span>
+                    <div class="text">
+                      <h3 class="title" data-i18n="index.projects.p4_title_html" data-i18n-html><a href="/sergi-stendi-layihe">Sərgi <br> Stendləri</a></h3>
+                      <ul class="list">
+                        <li data-i18n="index.projects.p4_cat">EKSPO STENDİ</li>
                       </ul>
                     </div>
                   </div>
@@ -422,7 +443,7 @@
               </div>
               <div class="btn-wrap">
                 <a href="/#layiheler" class="rr-btn-primary btn-black-2">
-                  <span class="text">Ətraflı </span>
+                  <span class="text" data-i18n="btn.more">Ətraflı </span>
                   <i class="fa-regular fa-arrow-right-long"></i>
                 </a>
               </div>
@@ -439,31 +460,31 @@
 
                 <div class="experience-4__box">
                   <div class="section-title-4__wrapper fade-anim">
-                    <h2 class="sub-title">TƏCRÜBƏMİZ</h2>
-                    <h2 class="title rr_title_anim">Sərgi stendləri və dizayn <br><span>sahəsində zəngin təcrübə</span>
+                    <h2 class="sub-title" data-i18n="index.exp.subtitle">TƏCRÜBƏMİZ</h2>
+                    <h2 class="title rr_title_anim" data-i18n="index.exp.title_html" data-i18n-html>Sərgi stendləri və dizayn <br><span>sahəsində zəngin təcrübə</span>
                     </h2>
                   </div>
                 </div>
                 <div class="experience-4__box">
                   <div class="experience-4__content">
-                    <p class="desc">Komandamızla birlikdə hər bir məkana funksionallıq, estetika və yüksək keyfiyyət qatırıq.</p>
+                    <p class="desc" data-i18n="index.exp.desc">Komandamızla birlikdə hər bir məkana funksionallıq, estetika və yüksək keyfiyyət qatırıq.</p>
 
                     <div class="experience-4__wrapper">
                       <div class="experience-4__item">
                         <h2 class="title"><span class="odometer" data-count="100">0</span>+</h2>
-                        <h3 class="sub-title">Uğurlu layihələr</h3>
+                        <h3 class="sub-title" data-i18n="index.exp.stat1">Uğurlu layihələr</h3>
                       </div>
                       <div class="experience-4__item">
                         <h2 class="title"><span class="odometer" data-count="7">0</span></h2>
-                        <h3 class="sub-title">İllik təcrübə</h3>
+                        <h3 class="sub-title" data-i18n="index.exp.stat2">İllik təcrübə</h3>
                       </div>
                       <div class="experience-4__item">
                         <h2 class="title"><span class="odometer" data-count="1">0</span></h2>
-                        <h3 class="sub-title">Rəsmi tərəfdaş</h3>
+                        <h3 class="sub-title" data-i18n="index.exp.stat3">Rəsmi tərəfdaş</h3>
                       </div>
                       <div class="experience-4__item">
                         <h2 class="title"><span class="odometer" data-count="25">0</span></h2>
-                        <h3 class="sub-title">Komanda üzvü</h3>
+                        <h3 class="sub-title" data-i18n="index.exp.stat4">Komanda üzvü</h3>
                       </div>
                     </div>
                   </div>
@@ -556,8 +577,8 @@
               <img src="assets/imgs/about/building.jpg" alt="imgage not found">
             </div>
             <div class="section-title-4__wrapper">
-              <h2 class="sub-title">BİZİMLƏ ƏLAQƏ</h2>
-              <h2 class="title rr_title_anim">2019-CU İLDƏN BƏRİ HƏR MƏQSƏDƏ UYĞUN <br>MƏKANLARIN QURULMASI
+              <h2 class="sub-title" data-i18n="index.cta.subtitle">BİZİMLƏ ƏLAQƏ</h2>
+              <h2 class="title rr_title_anim" data-i18n="index.cta.title_html" data-i18n-html>2019-CU İLDƏN BƏRİ HƏR MƏQSƏDƏ UYĞUN <br>MƏKANLARIN QURULMASI
               </h2>
             </div>
           </div>
@@ -569,15 +590,15 @@
           <div class="container rr-container-1790">
             <div class="project-6__top">
               <div class="section-title-6__wrapper">
-                <h2 class="title rr_title_anim">İnsanların məkanlarla, təbiətlə və texnologiya ilə əlaqəsini yenidən formalaşdıran fərqli layihələrə diqqət yetiririk.
+                <h2 class="title rr_title_anim" data-i18n="index.proj6.title" data-i18n-html>İnsanların məkanlarla, təbiətlə və texnologiya ilə əlaqəsini yenidən formalaşdıran fərqli layihələrə diqqət yetiririk.
                 </h2>
               </div>
               <div class="project-6__top-content">
                 <div class="project-6__pagination"></div>
-                <p class="project-6__dec">AA MİMARLIQ olaraq dizayn etdiyimiz hər bir məkanı özünəməxsus estetika, funksionallıq və müasirlik ilə zənginləşdiririk.</p>
+                <p class="project-6__dec" data-i18n="index.proj6.desc">AA MEMARLIQ olaraq dizayn etdiyimiz hər bir məkanı özünəməxsus estetika, funksionallıq və müasirlik ilə zənginləşdiririk.</p>
                 <div class="project-6__btn">
                   <a href="/#layiheler" class="rr-btn-primary">
-                    <span class="text">Bütün Layihələr </span>
+                    <span class="text" data-i18n="btn.all_projects">Bütün Layihələr </span>
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </div>
@@ -589,24 +610,23 @@
                 <div class="swiper-slide">
                   <div class="project-6__item">
                     <div class="project-6__thumb">
-                      <img src="assets/imgs/about/lahiyelerimi1-resized.jpeg" alt="image not found">
+                      <img src="assets/imgs/about/recent1.jpeg" alt="Premium Showroom İnteryeri">
 
                       <div class="content-top">
-                        <h2 class="sub-title">ÖNƏ ÇIXAN LAYİHƏ</h2>
-                        <a href="/sergi-stendi-layihe" class="project-6__arrow"><span><i
+                        <h2 class="sub-title" data-i18n="index.proj6.featured">ÖNƏ ÇIXAN LAYİHƏ</h2>
+                        <a href="/premium-showroom" class="project-6__arrow"><span><i
                               class="fa-regular fa-arrow-right-long"></i></span></a>
                       </div>
                       <div class="project-6__content">
                         <div class="price-plan">
-                          <h3 class="title"><a href="/sergi-stendi-layihe">Təbiətlə Vəhdət Stendi</a></h3>
-                          <span>Başlanğıc qiymət</span>
-                          <h2>5,000 <cite>AZN</cite></h2>
+                          <h3 class="title" data-i18n="index.proj6.p1_title"><a href="/premium-showroom">Premium Showroom İnteryeri</a></h3>
+                          <span data-i18n="index.proj6.p1_cat">KOMMERSİYA MƏKANI</span>
                         </div>
 
                         <ul class="details-list">
-                          <li><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> 1 Stend</li>
-                          <li><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> 1 Sahə</li>
-                          <li><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 150 m²</li>
+                          <li data-i18n="index.proj6.d1"><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> Showroom</li>
+                          <li data-i18n="index.proj6.d2"><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> İnteryer</li>
+                          <li data-i18n="index.proj6.d3"><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 2025</li>
                         </ul>
                       </div>
                     </div>
@@ -615,24 +635,23 @@
                 <div class="swiper-slide">
                   <div class="project-6__item">
                     <div class="project-6__thumb">
-                      <img src="assets/imgs/about/xidmet2-resized.jpeg" alt="image not found">
+                      <img src="assets/imgs/ferdiyasayis/1000003649.jpg.jpeg" alt="Fərdi Yaşayış Evi İnteryeri">
 
                       <div class="content-top">
-                        <h2 class="sub-title">İNTERYER DİZAYNI</h2>
-                        <a href="/sergi-stendi-layihe" class="project-6__arrow"><span><i
+                        <h2 class="sub-title" data-i18n="index.proj6.interior">İNTERYER DİZAYNI</h2>
+                        <a href="/ferdi-yasayis-evi" class="project-6__arrow"><span><i
                               class="fa-regular fa-arrow-right-long"></i></span></a>
                       </div>
                       <div class="project-6__content">
                         <div class="price-plan">
-                          <h3 class="title"><a href="/sergi-stendi-layihe">Müasir Lüks Ofis Məkanı</a></h3>
-                          <span>Başlanğıc qiymət</span>
-                          <h2>8,500 <cite>AZN</cite></h2>
+                          <h3 class="title" data-i18n="index.proj6.p2_title"><a href="/ferdi-yasayis-evi">Fərdi Yaşayış Evi İnteryeri</a></h3>
+                          <span data-i18n="index.proj6.p2_cat">DAXİLİ MƏKAN</span>
                         </div>
 
                         <ul class="details-list">
-                          <li><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> 5 Otaq</li>
-                          <li><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> 2 Sanitar q.</li>
-                          <li><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 320 m²</li>
+                          <li data-i18n="index.proj6.d4"><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> Yaşayış</li>
+                          <li data-i18n="index.proj6.d5"><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> İnteryer</li>
+                          <li data-i18n="index.proj6.d6"><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 2025</li>
                         </ul>
                       </div>
                     </div>
@@ -641,24 +660,23 @@
                 <div class="swiper-slide">
                   <div class="project-6__item">
                     <div class="project-6__thumb">
-                      <img src="assets/imgs/about/xidmetler3-resized.jpeg" alt="image not found">
+                      <img src="assets/imgs/ofiss/1000003600.jpg.jpeg" alt="Müasir Ofis İnteryeri">
 
                       <div class="content-top">
-                        <h2 class="sub-title">MEMARLIQ</h2>
-                        <a href="/sergi-stendi-layihe" class="project-6__arrow"><span><i
+                        <h2 class="sub-title" data-i18n="index.proj6.arch">OFİS DİZAYNI</h2>
+                        <a href="/muasir-ofis" class="project-6__arrow"><span><i
                               class="fa-regular fa-arrow-right-long"></i></span></a>
                       </div>
                       <div class="project-6__content">
                         <div class="price-plan">
-                          <h3 class="title"><a href="/sergi-stendi-layihe">Zərif Villa Layihəsi</a></h3>
-                          <span>Başlanğıc qiymət</span>
-                          <h2>12,000 <cite>AZN</cite></h2>
+                          <h3 class="title" data-i18n="index.proj6.p3_title"><a href="/muasir-ofis">Müasir Ofis İnteryeri</a></h3>
+                          <span data-i18n="index.proj6.p3_cat">OFİS DİZAYNI</span>
                         </div>
 
                         <ul class="details-list">
-                          <li><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> 8 Otaq</li>
-                          <li><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> 4 Hamam</li>
-                          <li><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 450 m²</li>
+                          <li data-i18n="index.proj6.d7"><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> Ofis</li>
+                          <li data-i18n="index.proj6.d8"><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> İnteryer</li>
+                          <li data-i18n="index.proj6.d9"><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 2025</li>
                         </ul>
                       </div>
                     </div>
@@ -667,24 +685,23 @@
                 <div class="swiper-slide">
                   <div class="project-6__item">
                     <div class="project-6__thumb">
-                      <img src="assets/imgs/about/xidmetler4-resized.jpeg" alt="image not found">
+                      <img src="assets/imgs/sergistendleri/WhatsApp Image 2026-05-17 at 20.47.06.jpeg" alt="Sərgi Stendləri">
 
                       <div class="content-top">
-                        <h2 class="sub-title">SƏRGİ STENDİ</h2>
+                        <h2 class="sub-title" data-i18n="index.proj6.exhibition">SƏRGİ STENDİ</h2>
                         <a href="/sergi-stendi-layihe" class="project-6__arrow"><span><i
                               class="fa-regular fa-arrow-right-long"></i></span></a>
                       </div>
                       <div class="project-6__content">
                         <div class="price-plan">
-                          <h3 class="title"><a href="/sergi-stendi-layihe">Baku Expo Sərgi Stendi</a></h3>
-                          <span>Başlanğıc qiymət</span>
-                          <h2>7,500 <cite>AZN</cite></h2>
+                          <h3 class="title" data-i18n="index.proj6.p4_title"><a href="/sergi-stendi-layihe">Sərgi Stendləri</a></h3>
+                          <span data-i18n="index.proj6.p4_cat">EKSPO STENDİ</span>
                         </div>
 
                         <ul class="details-list">
-                          <li><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> 1 Stend</li>
-                          <li><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> 1 Zona</li>
-                          <li><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 120 m²</li>
+                          <li data-i18n="index.proj6.d1"><img src="assets/imgs/icon/icon-10.svg" alt="icon not found"> Stend</li>
+                          <li data-i18n="index.proj6.d10"><img src="assets/imgs/icon/icon-11.svg" alt="icon not found"> Expo</li>
+                          <li data-i18n="index.proj6.d11"><img src="assets/imgs/icon/icon-12.svg" alt="icon not found"> 2025</li>
                         </ul>
                       </div>
                     </div>
@@ -706,42 +723,42 @@
             <div class="footer-4__wrapper">
               <div class="footer-widget-box">
                 <div class="content">
-                  <h3 class="title">Gəlin birlikdə işləyək</h3>
+                  <h3 class="title" data-i18n="footer.work_together">Gəlin birlikdə işləyək</h3>
                   <div class="info">
                     <a href="tel:994502000000">+994 50 200 00 00</a>
                     <a href="mailto:info@aamimarlik.az">info@aamimarlik.az</a>
-                    <a href="https://maps.app.goo.gl/JKwVELppRvPnjZ8c6" target="_blank">Baku Expo Center,
+                    <a href="https://maps.app.goo.gl/JKwVELppRvPnjZ8c6" target="_blank" data-i18n="footer.location_html" data-i18n-html>Baku Expo Center,
                       <br>
                       Bakı, Azərbaycan</a>
                   </div>
                 </div>
               </div>
               <div class="footer-widget-box">
-                <h2 class="title">YENİLİKLƏRƏ ABUNƏ OLUN</h2>
+                <h2 class="title" data-i18n="footer.subscribe_banner">YENİLİKLƏRƏ ABUNƏ OLUN</h2>
                 <div class="newsletter">
                   <div class="input-group">
-                    <input type="email" name="email" id="email" placeholder="E-poçt*">
+                    <input type="email" name="email" id="email" data-i18n-placeholder="ph.email" placeholder="E-poçt*">
                     <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
                   </div>
                 </div>
               </div>
 
               <div class="footer-widget-box">
-                <h2 class="title">Sürətli Keçidlər</h2>
+                <h2 class="title" data-i18n="footer.quick_links">Sürətli Keçidlər</h2>
                 <ul class="footer-nav-list">
-                                    <li><a href="/haqqimizda" data-text="Haqqımızda"><span>Haqqımızda</span></a></li>
-                                    <li><a href="/#layiheler" data-text="Layihələr"><span>Layihələr</span></a></li>
-                                    <li><a href="/xidmetlerimiz" data-text="Xidmətlər"><span>Xidmətlər</span></a></li>
-                                    <li><a href="/elaqe" data-text="Əlaqə"><span>Əlaqə</span></a></li>
+                                    <li><a href="/haqqimizda" data-text="Haqqımızda"><span data-i18n="nav.about">Haqqımızda</span></a></li>
+                                    <li><a href="/#layiheler" data-text="Layihələr"><span data-i18n="nav.projects">Layihələr</span></a></li>
+                                    <li><a href="/xidmetlerimiz" data-text="Xidmətlər"><span data-i18n="nav.services_short">Xidmətlər</span></a></li>
+                                    <li><a href="/elaqe" data-text="Əlaqə"><span data-i18n="nav.contact">Əlaqə</span></a></li>
                                 </ul>
               </div>
               <div class="footer-widget-box">
-                <h2 class="title">Sosial Şəbəkələr</h2>
+                <h2 class="title" data-i18n="footer.social">Sosial Şəbəkələr</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="https://www.facebook.com/" data-text="Facebook"><span>Facebook</span></a></li>
-                  <li><a href="https://x.com/" data-text="Twitter"><span>Twitter</span></a></li>
-                  <li><a href="https://www.instagram.com/" data-text="Instagram"><span>Instagram</span></a></li>
-                  <li><a href="https://www.pinterest.com/" data-text="Pinterest"><span>Pinterest</span></a></li>
+                  <li><a href="https://www.instagram.com/aalmemarliq?utm_source=qr&igsh=anpmMm5qNmp3ZnI1" target="_blank" rel="noopener noreferrer"
+                      data-text="Instagram"><span>Instagram</span></a></li>
+                  <li><a href="https://www.tiktok.com/@aa.memarilq?_r=1&_t=ZS-96zAPi5Gpe8" target="_blank" rel="noopener noreferrer"
+                      data-text="TikTok"><span>TikTok</span></a></li>
                 </ul>
               </div>
 
@@ -751,9 +768,9 @@
                 <img src="assets/imgs/about/aalogo-white.png" alt="Site Logo" style="height: 90px; width: auto; max-width: none !important; filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.5));">
               </div>
               <ul class="copyright__menu">
-                <li><a href="/elaqe">İstifadə qaydaları</a></li>
+                <li><a href="/elaqe" data-i18n="footer.terms">İstifadə qaydaları</a></li>
               </ul>
-              <p class="copyright__text"><a href="/"> AA MİMARLIQ </a>© 2026. Bütün hüquqlar qorunur.</p>
+              <p class="copyright__text"><a href="/"> AA MEMARLIQ </a><span data-i18n="footer.copyright">© 2026. Bütün hüquqlar qorunur.</span></p>
             </div>
           </div>
         </div>
@@ -782,6 +799,8 @@
   <script src="assets/vandor/isotope/isotope.pkgd.min.js"></script>
   <script src="assets/vandor/magnific/magnific-popup.min.js"></script>
   <!-- Template Main JS File -->
+    <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/vandor/common-js/common.js"></script>
   <script src="assets/js/main.js"></script>
 

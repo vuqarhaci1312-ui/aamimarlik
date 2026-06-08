@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="az">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body data-page="contact">
 
     <div class="loader-wrap">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
@@ -38,13 +38,13 @@
                 <span>A</span>
                 <span> </span>
                 <span>M</span>
-                <span>i</span>
-                <span>m</span>
-                <span>a</span>
-                <span>r</span>
-                <span>l</span>
-                <span>ı</span>
-                <span>q</span>
+                <span>E</span>
+                <span>M</span>
+                <span>A</span>
+                <span>R</span>
+                <span>L</span>
+                <span>I</span>
+                <span>Q</span>
             </div>
         </div>
     </div>
@@ -74,17 +74,17 @@
                 <div class="offset-button">
                     <a href="/elaqe" class="rr-btn">
                         <span class="btn-wrap">
-                            <span class="text-one">Əlaqə</span>
-                            <span class="text-two">Əlaqə</span>
+                            <span class="text-one" data-i18n="btn.contact">Əlaqə</span>
+                            <span class="text-two" data-i18n="btn.contact">Əlaqə</span>
                         </span>
                     </a>
                 </div>
                 <div class="offset-widget-box">
-                    <h2 class="title">Bizimlə Əlaqə</h2>
+                    <h2 class="title" data-i18n="sidebar.contact_title">Bizimlə Əlaqə</h2>
                     <div class="contact-meta">
                         <div class="contact-item">
                             <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                            <span class="text">Baku Expo Center</span>
+                            <span class="text" data-i18n="footer.location_line">Baku Expo Center</span>
                         </div>
                         <div class="contact-item">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
@@ -120,29 +120,35 @@
                             <div class="header__nav-2">
                                 <nav class="main-menu">
       <ul>
-        <li><a href="/">Ana Səhifə</a></li>
-        <li><a href="/haqqimizda">Haqqımızda</a></li>
+        <li><a href="/" data-i18n="nav.home">Ana Səhifə</a></li>
+        <li><a href="/haqqimizda" data-i18n="nav.about">Haqqımızda</a></li>
         <li class="menu-item-has-children menu-item-services">
-          <a href="/xidmetlerimiz">Xidmətlərimiz</a>
+          <a href="/xidmetlerimiz" data-i18n="nav.services">Xidmətlərimiz</a>
           <ul class="dp-menu">
-            <li><a href="/interyer-eksteryer">İnteryer və Eksteryer</a></li>
-            <li><a href="/memarliq-layiheleri">Memarlıq Layihələri</a></li>
-            <li><a href="/sergi-stendleri">Sərgi Stendləri</a></li>
-            <li><a href="/layihe-idareetmesi">Layihə İdarəetməsi</a></li>
+            <li><a href="/interyer-eksteryer" data-i18n="nav.svc_interyer">İnteryer və Eksteryer</a></li>
+            <li><a href="/memarliq-layiheleri" data-i18n="nav.svc_memarliq">Memarlıq Layihələri</a></li>
+            <li><a href="/sergi-stendleri" data-i18n="nav.svc_sergi">Sərgi Stendləri</a></li>
+            <li><a href="/layihe-idareetmesi" data-i18n="nav.svc_pm">Layihə İdarəetməsi</a></li>
           </ul>
         </li>
-        <li><a href="/faq">FAQ</a></li>
-        <li><a href="/elaqe">Əlaqə</a></li>
+        <li><a href="/faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="/elaqe" data-i18n="nav.contact">Əlaqə</a></li>
       </ul>
     </nav>
                             </div>
                             <div class="header-right">
                                 <a href="/elaqe" class="rr-btn-primary">
-                                    <span class="text">Əlaqə </span>
+                                    <span class="text" data-i18n="btn.contact">Əlaqə </span>
                                     <i class="fa-solid fa-angle-right right-icon"></i>
                                 </a>
 
-                                <div class="header__navicon">
+                                <div class="lang-switcher" role="group" aria-label="Dil">
+  <button type="button" class="lang-switcher__btn is-active" data-lang="az">AZ</button>
+  <button type="button" class="lang-switcher__btn" data-lang="tr">TR</button>
+  <button type="button" class="lang-switcher__btn" data-lang="en">EN</button>
+  <button type="button" class="lang-switcher__btn" data-lang="ru">RU</button>
+</div>
+                <div class="header__navicon">
                                     <div class="side-toggle desktop-button d-none">
                                         <a class="bar-icon inner" href="javascript:void(0)">
                                             <span></span>
@@ -171,8 +177,8 @@
                     <div class="container rr-container-1650">
                         <div class="page-title-area-inner">
                             <div class="page-title-wrapper">
-                                <h2 class="page-sub-title">Bizimlə əlaqə</h2>
-                                <h3 class="page-title"> Bizə yazın və <br>
+                                <h2 class="page-sub-title" data-i18n="contact.page_sub">Bizimlə əlaqə</h2>
+                                <h3 class="page-title" data-i18n="contact.page_title_html" data-i18n-html> Bizə yazın və <br>
                                     layihənizi dərhal <br> başladaq.</h3>
                             </div>
                         </div>
@@ -187,19 +193,16 @@
                             <div class="section-content-wrapper fade-anim">
                                 <div class="section-content">
                                     <div class="contact-mail">
-                                        <p class="title">Əlaqə saxlayın</p>
-                                        <p class="text">Sizinlə işləməkdən və birlikdə möhtəşəm bir layihə ərsəyə gətirməkdən məmnun olarıq. <br>
+                                        <p class="title" data-i18n="contact.reach_title">Əlaqə saxlayın</p>
+                                        <p class="text" data-i18n="contact.reach_text_html" data-i18n-html>Sizinlə işləməkdən və birlikdə möhtəşəm bir layihə ərsəyə gətirməkdən məmnun olarıq. <br>
                                             <a href="mailto:info@aamimarlik.az">info@aamimarlik.az</a>
                                         </p>
                                     </div>
                                     <div class="contact-social">
-                                        <p class="title">İzləyin</p>
+                                        <p class="title" data-i18n="contact.follow">İzləyin</p>
                                         <div class="social-links">
-                                            <a href="https://www.facebook.com/">Facebook</a>
-                                            <a href="https://x.com/">Twitter</a>
-                                            <a href="https://www.linkedin.com/">LinkedIn</a>
-                                            <a href="https://www.instagram.com/">Instagram</a>
-                                            <a href="https://www.pinterest.com/">Pinterest</a>
+                                            <a href="https://www.instagram.com/aalmemarliq?utm_source=qr&igsh=anpmMm5qNmp3ZnI1" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                            <a href="https://www.tiktok.com/@aa.memarilq?_r=1&_t=ZS-96zAPi5Gpe8" target="_blank" rel="noopener noreferrer">TikTok</a>
                                         </div>
                                     </div>
                                 </div>
@@ -207,38 +210,38 @@
                                     <form id="contact__form" method="POST" action="./mail.php">
                                         <div class="contact-formwrap">
                                             <div class="contact-formfield">
-                                                <input type="text" name="name" id="name2" placeholder="Adınız*">
+                                                <input type="text" name="name" id="name2" data-i18n-placeholder="ph.name_your" placeholder="Adınız*">
                                             </div>
                                             <div class="contact-formfield">
-                                                <input type="text" name="email" id="email2" placeholder="E-poçt*">
+                                                <input type="text" name="email" id="email2" data-i18n-placeholder="ph.email" placeholder="E-poçt*">
                                             </div>
                                             <div class="contact-formfield">
-                                                <input type="text" name="phone" id="phone" placeholder="Telefon*">
+                                                <input type="text" name="phone" id="phone" data-i18n-placeholder="ph.phone" placeholder="Telefon*">
                                             </div>
                                             <div class="contact-formfield">
-                                                <input type="text" name="company" id="company" placeholder="Şirkət">
+                                                <input type="text" name="company" id="company" data-i18n-placeholder="ph.company" placeholder="Şirkət">
                                             </div>
                                             <div class="contact-formfield">
                                                 <select name="Budget" id="Budget">
-                                                    <option value="0" disabled selected>Büdcə*</option>
-                                                    <option value="1">5,000 - 10,000 AZN</option>
-                                                    <option value="2">10,000 - 15,000 AZN</option>
-                                                    <option value="3">15,000 - 20,000 AZN</option>
-                                                    <option value="4">20,000 - 25,000 AZN</option>
-                                                    <option value="5">25,000 AZN-dən yuxarı</option>
+                                                    <option value="0" disabled selected data-i18n="ph.budget">Büdcə*</option>
+                                                    <option value="1" data-i18n="select.budget_1">5,000 - 10,000 AZN</option>
+                                                    <option value="2" data-i18n="select.budget_2">10,000 - 15,000 AZN</option>
+                                                    <option value="3" data-i18n="select.budget_3">15,000 - 20,000 AZN</option>
+                                                    <option value="4" data-i18n="select.budget_4">20,000 - 25,000 AZN</option>
+                                                    <option value="5" data-i18n="select.budget_5">25,000 AZN-dən yuxarı</option>
                                                 </select>
                                             </div>
                                             <div class="contact-formfield">
                                                 <input type="text" name="solution" id="solution"
-                                                    placeholder="Tələb olunan xidmət*">
+                                                    data-i18n-placeholder="ph.service" placeholder="Tələb olunan xidmət*">
                                             </div>
                                             <div class="contact-formfield message">
-                                                <input type="text" name="message" id="message" placeholder="Mesajınız*">
+                                                <input type="text" name="message" id="message" data-i18n-placeholder="ph.message" placeholder="Mesajınız*">
                                             </div>
                                         </div>
                                         <div class="submit-btn">
                                             <button type="submit" class="rr-btn-primary">
-                                                <span class="text">İndi göndər </span>
+                                                <span class="text" data-i18n="btn.send_now">İndi göndər </span>
                                                 <i class="fa-solid fa-arrow-right-long"></i>
                                             </button>
                                         </div>
@@ -256,27 +259,27 @@
                     <div class="container rr-container-1650">
                         <div class="contact-info__inner">
                             <div class="contact-info__item">
-                                <h2 class="sub-title">Departamentlərimiz:</h2>
+                                <h2 class="sub-title" data-i18n="contact.dept_title">Departamentlərimiz:</h2>
                             </div>
                             <div class="contact-info__item">
-                                <h3 class="title">Baş Ofis (Ekspo Mərkəzi)</h3>
-                                <p>Baku Expo Center, <br>
+                                <h3 class="title" data-i18n="contact.dept1">Baş Ofis (Ekspo Mərkəzi)</h3>
+                                <p data-i18n="footer.location_html2" data-i18n-html>Baku Expo Center, <br>
                                     Bakı, Azərbaycan</p>
  
                                 <a class="contact" href="tel:994502000000">+994 50 200 00 00</a>
                                 <a href="mailto:info@aamimarlik.az">info@aamimarlik.az</a>
                             </div>
                             <div class="contact-info__item">
-                                <h3 class="title">Dizayn Departamenti</h3>
-                                <p>Baku Expo Center, <br>
+                                <h3 class="title" data-i18n="contact.dept2">Dizayn Departamenti</h3>
+                                <p data-i18n="footer.location_html2" data-i18n-html>Baku Expo Center, <br>
                                     Bakı, Azərbaycan</p>
  
                                 <a class="contact" href="tel:994502000000">+994 50 200 00 00</a>
                                 <a href="mailto:design@aamimarlik.az">design@aamimarlik.az</a>
                             </div>
                             <div class="contact-info__item">
-                                <h3 class="title">İstehsalat və Quraşdırma</h3>
-                                <p>Baku Expo Center, <br>
+                                <h3 class="title" data-i18n="contact.dept3">İstehsalat və Quraşdırma</h3>
+                                <p data-i18n="footer.location_html2" data-i18n-html>Baku Expo Center, <br>
                                     Bakı, Azərbaycan</p>
  
                                 <a class="contact" href="tel:994502000000">+994 50 200 00 00</a>
@@ -296,49 +299,43 @@
                         <div class="footer-widget-wrapper">
                             <div class="footer-widget-box">
                                 <div class="subscribe-form">
-                                    <h2 class="title">Abunə olun</h2>
+                                    <h2 class="title" data-i18n="footer.subscribe">Abunə olun</h2>
                                     <div class="input-group">
-                                        <input type="text" name="name" id="name" placeholder="Ad">
+                                        <input type="text" name="name" id="name" data-i18n-placeholder="ph.name" placeholder="Ad">
                                     </div>
                                     <div class="input-group">
-                                        <input type="email" name="email" id="email" placeholder="E-poçt ünvanınız">
+                                        <input type="email" name="email" id="email" data-i18n-placeholder="ph.email_addr" placeholder="E-poçt ünvanınız">
                                         <button type="submit"><i class="fa-regular fa-arrow-right-long"></i></button>
                                     </div>
                                 </div>
                                 <div class="copyright-text">
-                                    <p class="text"> <a href="/">© AA MİMARLIQ.</a>
+                                    <p class="text"> <a href="/" data-i18n="footer.copyright_short">© AA MEMARLIQ.</a>
                                         2026</p>
                                 </div>
                             </div>
                             <div class="footer-widget-box">
-                                <h2 class="title">Sürətli Keçidlər</h2>
+                                <h2 class="title" data-i18n="footer.quick_links">Sürətli Keçidlər</h2>
                                 <ul class="footer-nav-list">
-                                    <li><a href="/haqqimizda" data-text="Haqqımızda"><span>Haqqımızda</span></a></li>
-                                    <li><a href="portfolio-7.html" data-text="Layihələr"><span>Layihələr</span></a></li>
-                                    <li><a href="/xidmetlerimiz" data-text="Xidmətlər"><span>Xidmətlər</span></a></li>
-                                    <li><a href="/elaqe" data-text="Əlaqə"><span>Əlaqə</span></a></li>
+                                    <li><a href="/haqqimizda" data-text="Haqqımızda"><span data-i18n="nav.about">Haqqımızda</span></a></li>
+                                    <li><a href="/#layiheler" data-text="Layihələr"><span data-i18n="nav.projects">Layihələr</span></a></li>
+                                    <li><a href="/xidmetlerimiz" data-text="Xidmətlər"><span data-i18n="nav.services_short">Xidmətlər</span></a></li>
+                                    <li><a href="/elaqe" data-text="Əlaqə"><span data-i18n="nav.contact">Əlaqə</span></a></li>
                                 </ul>
                             </div>
                             <div class="footer-widget-box">
-                                <h2 class="title">Sosial Şəbəkələr</h2>
+                                <h2 class="title" data-i18n="footer.social">Sosial Şəbəkələr</h2>
                                 <ul class="footer-nav-list">
-                                    <li><a href="https://www.facebook.com/"
-                                            data-text="Facebook"><span>Facebook</span></a></li>
-                                    <li><a href="https://x.com/?lang=en" data-text="Twitter"><span>Twitter</span></a>
-                                    </li>
-                                    <li><a href="https://www.instagram.com/"
+                                    <li><a href="https://www.instagram.com/aalmemarliq?utm_source=qr&igsh=anpmMm5qNmp3ZnI1" target="_blank" rel="noopener noreferrer"
                                             data-text="Instagram"><span>Instagram</span></a></li>
-                                    <li><a href="https://www.linkedin.com/"
-                                            data-text="LinkedIn"><span>LinkedIn</span></a></li>
-                                    <li><a href="https://www.pinterest.com/"
-                                            data-text="Pinterest"><span>Pinterest</span></a></li>
+                                    <li><a href="https://www.tiktok.com/@aa.memarilq?_r=1&_t=ZS-96zAPi5Gpe8" target="_blank" rel="noopener noreferrer"
+                                            data-text="TikTok"><span>TikTok</span></a></li>
                                 </ul>
 
                             </div>
                             <div class="footer-widget-box">
-                                <h2 class="title">Ofis</h2>
+                                <h2 class="title" data-i18n="footer.office">Ofis</h2>
                                 <div class="footer-location">
-                                    <p>Baku Expo Center, <br>
+                                    <p data-i18n="footer.location_html2" data-i18n-html>Baku Expo Center, <br>
                                         Bakı, Azərbaycan
                                     </p>
                                     <a href="tell:+994502000000">+994 50 200 00 00</a>
@@ -369,7 +366,9 @@
     <script src="assets/vandor/backtop/backToTop.js"></script>
     <script src="assets/vandor/nice-select/nice-select.js"></script>
     <!-- Template Main JS File -->
-    <script src="assets/vandor/common-js/common.js"></script>
+      <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/vandor/common-js/common.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

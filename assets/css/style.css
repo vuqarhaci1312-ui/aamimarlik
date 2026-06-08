@@ -49,7 +49,7 @@
 
 
 /* === Colors variable scss (index 01) === */
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 :root {
   --primary: #111111;
   --secondary: #555555;
@@ -103,6 +103,7 @@
   --font_bai: "Bai Jamjuree", sans-serif;
   --font_granola: "Granola";
   --font_bdo-grotsk: "BDO Grotesk";
+  --font_bdogrotesk: "BDO Grotesk";
   --font_suisse-int: "Suisse Int";
   --font_tartuffotrial: "Tartuffo_Trial-Regular";
   --font_awesome: "Font Awesome 6 Pro";
@@ -119,7 +120,6 @@ body {
   line-height: 1;
   font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
   letter-spacing: -0.48px;
   color: var(--secondary);
 }
@@ -24065,7 +24065,7 @@ section {
 }
 
 /* ==========================================================================
-   Logo Styling Overrides for AA Mimarlik
+   Logo Styling Overrides for AA MEMARLIQ
    ========================================================================== */
 .header__logo, 
 .header__logo a, 
@@ -24125,5 +24125,82 @@ section {
 .header-area-7.sticky .header__logo img,
 .header-sticky.sticky .header__logo img {
   filter: brightness(0) !important;
+}
+
+/* Language switcher (AZ / TR) */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 16px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header-right .lang-switcher {
+  flex-shrink: 0;
+}
+
+.offset-header .lang-switcher {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.lang-switcher__btn {
+  min-width: 38px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switcher__btn:hover {
+  color: #fff;
+}
+
+.lang-switcher__btn.is-active {
+  background: #fff;
+  color: #111;
+}
+
+.sticky .lang-switcher,
+.transformed .lang-switcher,
+.scrolled .lang-switcher {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.sticky .lang-switcher__btn,
+.transformed .lang-switcher__btn,
+.scrolled .lang-switcher__btn {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.sticky .lang-switcher__btn.is-active,
+.transformed .lang-switcher__btn.is-active,
+.scrolled .lang-switcher__btn.is-active {
+  background: #111;
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .header-right .lang-switcher {
+    margin-right: 10px;
+  }
+
+  .lang-switcher__btn {
+    min-width: 34px;
+    padding: 5px 8px;
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

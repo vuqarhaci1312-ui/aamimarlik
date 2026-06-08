@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="az">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body data-page="faq">
 
     <div class="loader-wrap">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
@@ -38,13 +38,13 @@
                 <span>A</span>
                 <span> </span>
                 <span>M</span>
-                <span>i</span>
-                <span>m</span>
-                <span>a</span>
-                <span>r</span>
-                <span>l</span>
-                <span>ı</span>
-                <span>q</span>
+                <span>E</span>
+                <span>M</span>
+                <span>A</span>
+                <span>R</span>
+                <span>L</span>
+                <span>I</span>
+                <span>Q</span>
             </div>
         </div>
     </div>
@@ -74,17 +74,17 @@
                 <div class="offset-button">
                     <a href="/elaqe" class="rr-btn">
                         <span class="btn-wrap">
-                            <span class="text-one">Əlaqə</span>
-                            <span class="text-two">Əlaqə</span>
+                            <span class="text-one" data-i18n="btn.contact">Əlaqə</span>
+                            <span class="text-two" data-i18n="btn.contact">Əlaqə</span>
                         </span>
                     </a>
                 </div>
                 <div class="offset-widget-box">
-                    <h2 class="title">Bizimlə Əlaqə</h2>
+                    <h2 class="title" data-i18n="sidebar.contact_title">Bizimlə Əlaqə</h2>
                     <div class="contact-meta">
                         <div class="contact-item">
                             <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                            <span class="text">Baku Expo Center</span>
+                            <span class="text" data-i18n="footer.location_line">Baku Expo Center</span>
                         </div>
                         <div class="contact-item">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
@@ -120,29 +120,35 @@
                             <div class="header__nav-2">
                                 <nav class="main-menu">
       <ul>
-        <li><a href="/">Ana Səhifə</a></li>
-        <li><a href="/haqqimizda">Haqqımızda</a></li>
+        <li><a href="/" data-i18n="nav.home">Ana Səhifə</a></li>
+        <li><a href="/haqqimizda" data-i18n="nav.about">Haqqımızda</a></li>
         <li class="menu-item-has-children menu-item-services">
-          <a href="/xidmetlerimiz">Xidmətlərimiz</a>
+          <a href="/xidmetlerimiz" data-i18n="nav.services">Xidmətlərimiz</a>
           <ul class="dp-menu">
-            <li><a href="/interyer-eksteryer">İnteryer və Eksteryer</a></li>
-            <li><a href="/memarliq-layiheleri">Memarlıq Layihələri</a></li>
-            <li><a href="/sergi-stendleri">Sərgi Stendləri</a></li>
-            <li><a href="/layihe-idareetmesi">Layihə İdarəetməsi</a></li>
+            <li><a href="/interyer-eksteryer" data-i18n="nav.svc_interyer">İnteryer və Eksteryer</a></li>
+            <li><a href="/memarliq-layiheleri" data-i18n="nav.svc_memarliq">Memarlıq Layihələri</a></li>
+            <li><a href="/sergi-stendleri" data-i18n="nav.svc_sergi">Sərgi Stendləri</a></li>
+            <li><a href="/layihe-idareetmesi" data-i18n="nav.svc_pm">Layihə İdarəetməsi</a></li>
           </ul>
         </li>
-        <li><a href="/faq">FAQ</a></li>
-        <li><a href="/elaqe">Əlaqə</a></li>
+        <li><a href="/faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="/elaqe" data-i18n="nav.contact">Əlaqə</a></li>
       </ul>
     </nav>
                             </div>
                             <div class="header-right">
                                 <a href="/elaqe" class="rr-btn-primary">
-                                    <span class="text">Əlaqə </span>
+                                    <span class="text" data-i18n="btn.contact">Əlaqə </span>
                                     <i class="fa-solid fa-angle-right right-icon"></i>
                                 </a>
 
-                                <div class="header__navicon">
+                                <div class="lang-switcher" role="group" aria-label="Dil">
+  <button type="button" class="lang-switcher__btn is-active" data-lang="az">AZ</button>
+  <button type="button" class="lang-switcher__btn" data-lang="tr">TR</button>
+  <button type="button" class="lang-switcher__btn" data-lang="en">EN</button>
+  <button type="button" class="lang-switcher__btn" data-lang="ru">RU</button>
+</div>
+                <div class="header__navicon">
                                     <div class="side-toggle desktop-button d-none">
                                         <a class="bar-icon inner" href="javascript:void(0)">
                                             <span></span>
@@ -171,9 +177,9 @@
                     <div class="container rr-container-1650">
                         <div class="page-title-area-inner">
                             <div class="page-title-wrapper">
-                                <h2 class="page-sub-title">Ağlınızdakı sualların <br>
+                                <h2 class="page-sub-title" data-i18n="faq.page_sub_html" data-i18n-html>Ağlınızdakı sualların <br>
                                     cavablarını tapın</h2>
-                                <h3 class="page-title">Tez-Tez Verilən <br>
+                                <h3 class="page-title" data-i18n="faq.page_title_html" data-i18n-html>Tez-Tez Verilən <br>
                                     Suallar</h3>
                             </div>
                         </div>
@@ -189,24 +195,24 @@
                             <div class="faq-wrapper">
                                 <div class="content">
 
-                                    <h2 class="sub-title">FAQ</h2>
-                                    <h3 class="title">Sualların cavabı yoxdur? Xüsusi cavablar əldə edin</h3>
+                                    <h2 class="sub-title" data-i18n="faq.sidebar_sub">FAQ</h2>
+                                    <h3 class="title" data-i18n="faq.sidebar_title">Sualların cavabı yoxdur? Xüsusi cavablar əldə edin</h3>
 
                                     <div class="contact-wrap">
                                         <div class="contact-formwrap">
                                             <div class="contact-formfield">
-                                                <input type="text" name="name" id="name2" placeholder="Ad*">
+                                                <input type="text" name="name" id="name2" data-i18n-placeholder="ph.name_req" placeholder="Ad*">
                                             </div>
                                             <div class="contact-formfield">
-                                                <input type="text" name="email" id="email2" placeholder="E-poçt*">
+                                                <input type="text" name="email" id="email2" data-i18n-placeholder="ph.email" placeholder="E-poçt*">
                                             </div>
                                             <div class="contact-formfield message">
-                                                <textarea id="message" name="message" placeholder="Mesajınız"></textarea>
+                                                <textarea id="message" name="message" data-i18n-placeholder="ph.message_opt" placeholder="Mesajınız"></textarea>
                                             </div>
                                         </div>
                                         <div class="submit-btn">
                                             <button type="submit" class="rr-btn-primary">
-                                                <span class="text">İndi göndər </span>
+                                                <span class="text" data-i18n="btn.send_now">İndi göndər </span>
                                                 <i class="fa-solid fa-arrow-right-long"></i>
                                             </button>
                                         </div>
@@ -220,13 +226,13 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                                 aria-expanded="false" aria-controls="collapseOne">
-                                                Memarlar hansı xidmətləri göstərirlər?
+                                                <span data-i18n="faq.q1">Memarlar hansı xidmətləri göstərirlər?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                AA MİMARLIQ olaraq biz sərgi stendlərinin dizaynı və quraşdırılması, yaşayış və kommersiya obyektlərinin interyer və eksteryer dizaynı, habelə landşaft dizaynı və layihələrin idarəedilməsi xidmətlərini təqdim edirik.
+                                            <div class="accordion-body" data-i18n="faq.a1">
+                                                AA MEMARLIQ olaraq biz sərgi stendlərinin dizaynı və quraşdırılması, yaşayış və kommersiya obyektlərinin interyer və eksteryer dizaynı, habelə landşaft dizaynı və layihələrin idarəedilməsi xidmətlərini təqdim edirik.
                                             </div>
                                         </div>
                                     </div>
@@ -235,12 +241,12 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                 aria-expanded="false" aria-controls="collapseTwo">
-                                                Layihəmin hansı mərhələsində memarla əlaqə saxmalıyamsa?
+                                                <span data-i18n="faq.q2">Layihəmin hansı mərhələsində memarla əlaqə saxlamalıyamsa?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse show"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" data-i18n="faq.a2">
                                                 Layihənin ən erkən mərhələsində memarla işləməyə başlamaq tövsiyə olunur. Bu, ilkin konsepsiyanın düzgün qurulmasına, büdcə planlaşdırılmasına və gələcəkdə yarana biləcək problemlərin qarşısının alınmasına kömək edir.
                                             </div>
                                         </div>
@@ -250,12 +256,12 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                 aria-expanded="false" aria-controls="collapseThree">
-                                                İnteryer dizaynerlərinizin iş nümunələri və tövsiyə məktubları varmı?
+                                                <span data-i18n="faq.q3">İnteryer dizaynerlərinizin iş nümunələri və tövsiyə məktubları varmı?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" data-i18n="faq.a3">
                                                 Bəli, bizim zəngin portfoliomuz mövcuddur. Baku Expo Center və digər məkanlarda həyata keçirdiyimiz 100-dən çox layihənin dizayn və quraşdırılma nümunələrini ofisimizdə və ya vebsaytımızın layihələr bölməsində nəzərdən keçirə bilərsiniz.
                                             </div>
                                         </div>
@@ -265,13 +271,13 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                                 aria-expanded="false" aria-controls="collapseFour">
-                                                Layihəm üçün düzgün memarı necə tapa bilərəm?
+                                                <span data-i18n="faq.q4">Layihəm üçün düzgün memarı necə tapa bilərəm?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseFour" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Düzgün memar seçmək üçün onun əvvəlki iş təcrübəsini, portfolio keyfiyyətini və sizin baxış bucağınızı nə dərəcədə anladığını yoxlamalısınız. AA MİMARLIQ olaraq biz hər layihəyə fərdi yanaşaraq mükəmməl nəticə zəmanəti veririk.
+                                            <div class="accordion-body" data-i18n="faq.a4">
+                                                Düzgün memar seçmək üçün onun əvvəlki iş təcrübəsini, portfolio keyfiyyətini və sizin baxış bucağınızı nə dərəcədə anladığını yoxlamalısınız. AA MEMARLIQ olaraq biz hər layihəyə fərdi yanaşaraq mükəmməl nəticə zəmanəti veririk.
                                             </div>
                                         </div>
                                     </div>
@@ -280,12 +286,12 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                                 aria-expanded="false" aria-controls="collapseFive">
-                                                Memarlıq planlarını hazırlamaq üçün ən yaxşı vaxt hansıdır?
+                                                <span data-i18n="faq.q5">Memarlıq planlarını hazırlamaq üçün ən yaxşı vaxt hansıdır?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseFive" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" data-i18n="faq.a5">
                                                 Tikinti və ya quraşdırma işlərinə başlamazdan ən azı bir neçə ay öncə planların hazırlanması idealdır. Bu, bütün detalların dəqiqləşdirilməsinə, material seçiminə və rəsmi icazələrin/təsdiqlərin alınmasına kifayət qədər vaxt yaradır.
                                             </div>
                                         </div>
@@ -295,12 +301,12 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseSix"
                                                 aria-expanded="false" aria-controls="collapseSix">
-                                                Çizimlərin və dizaynın tamamlanması nə qədər vaxt aparır?
+                                                <span data-i18n="faq.q6">Çizimlərin və dizaynın tamamlanması nə qədər vaxt aparır?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseSix" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" data-i18n="faq.a6">
                                                 Layihənin mürəkkəbliyindən və miqyasından asılı olaraq dizayn mərhələsi adətən 2 həftədən 1 aya qədər çəkir. Sərgi stendlərinin dizaynı isə daha sürətli şəkildə — bir neçə gün ərzində hazırlana bilər.
                                             </div>
                                         </div>
@@ -310,12 +316,12 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseSeven"
                                                 aria-expanded="false" aria-controls="collapseSeven">
-                                                Kommersiya yoxsa yaşayış sahələrinin dizayn və memarlığını edirsiniz?
+                                                <span data-i18n="faq.q7">Kommersiya yoxsa yaşayış sahələrinin dizayn və memarlığını edirsiniz?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseSeven" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" data-i18n="faq.a7">
                                                 Biz hər iki sahədə xidmət göstəririk. Həm fərdi villaların, mənzillərin interyer dizaynını, həm də sərgi stendləri, ofislər, restoranlar və digər kommersiya obyektlərinin dizayn və quraşdırılmasını həyata keçiririk.
                                             </div>
                                         </div>
@@ -325,12 +331,12 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseEight"
                                                 aria-expanded="false" aria-controls="collapseEight">
-                                                Qiymətləriniz necə təyin olunur? Bütün layihələr yüksək büdcəlidirmi?
+                                                <span data-i18n="faq.q8">Qiymətləriniz necə təyin olunur? Bütün layihələr yüksək büdcəlidirmi?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseEight" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" data-i18n="faq.a8">
                                                 Layihələrimizin qiyməti sahənin ölçüsünə, istifadə olunacaq materialların növünə və dizaynın mürəkkəbliyinə görə fərdi olaraq hesablanır. Hər bir müştərinizin büdcəsinə uyğun optimallaşdırılmış və keyfiyyətli həllər təklif edirik.
                                             </div>
                                         </div>
@@ -340,12 +346,12 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseNine"
                                                 aria-expanded="false" aria-controls="collapseNine">
-                                                Memarlarla işləmək layihənin maya dəyərini əhəmiyyətli dərəcədə artırmırmı?
+                                                <span data-i18n="faq.q9">Memarlarla işləmək layihənin maya dəyərini əhəmiyyətli dərəcədə artırmırmı?</span>
                                             </button>
                                         </h2>
                                         <div id="collapseNine" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" data-i18n="faq.a9">
                                                 Əksinə, peşəkar memarla çalışmaq material itkisinin qarşısını alır, səhv tikinti/quraşdırma xərclərini aradan qaldırır və büdcənizdən maksimum səmərəli istifadə etməyə kömək etməklə sizə qənaət bəxş edir.
                                             </div>
                                         </div>
@@ -367,49 +373,43 @@
                         <div class="footer-widget-wrapper">
                             <div class="footer-widget-box">
                                 <div class="subscribe-form">
-                                    <h2 class="title">Abunə olun</h2>
+                                    <h2 class="title" data-i18n="footer.subscribe">Abunə olun</h2>
                                     <div class="input-group">
-                                        <input type="text" name="name" id="name" placeholder="Ad">
+                                        <input type="text" name="name" id="name" data-i18n-placeholder="ph.name" placeholder="Ad">
                                     </div>
                                     <div class="input-group">
-                                        <input type="email" name="email" id="email" placeholder="E-poçt ünvanınız">
+                                        <input type="email" name="email" id="email" data-i18n-placeholder="ph.email_addr" placeholder="E-poçt ünvanınız">
                                         <button type="submit"><i class="fa-regular fa-arrow-right-long"></i></button>
                                     </div>
                                 </div>
                                 <div class="copyright-text">
-                                    <p class="text"> <a href="/">© AA MİMARLIQ.</a>
+                                    <p class="text"> <a href="/" data-i18n="footer.copyright_short">© AA MEMARLIQ.</a>
                                         2026</p>
                                 </div>
                             </div>
                             <div class="footer-widget-box">
-                                <h2 class="title">Sürətli Keçidlər</h2>
+                                <h2 class="title" data-i18n="footer.quick_links">Sürətli Keçidlər</h2>
                                 <ul class="footer-nav-list">
-                                    <li><a href="/haqqimizda" data-text="Haqqımızda"><span>Haqqımızda</span></a></li>
-                                    <li><a href="portfolio-7.html" data-text="Layihələr"><span>Layihələr</span></a></li>
-                                    <li><a href="/xidmetlerimiz" data-text="Xidmətlər"><span>Xidmətlər</span></a></li>
-                                    <li><a href="/elaqe" data-text="Əlaqə"><span>Əlaqə</span></a></li>
+                                    <li><a href="/haqqimizda" data-text="Haqqımızda"><span data-i18n="nav.about">Haqqımızda</span></a></li>
+                                    <li><a href="/#layiheler" data-text="Layihələr"><span data-i18n="nav.projects">Layihələr</span></a></li>
+                                    <li><a href="/xidmetlerimiz" data-text="Xidmətlər"><span data-i18n="nav.services_short">Xidmətlər</span></a></li>
+                                    <li><a href="/elaqe" data-text="Əlaqə"><span data-i18n="nav.contact">Əlaqə</span></a></li>
                                 </ul>
                             </div>
                             <div class="footer-widget-box">
-                                <h2 class="title">Sosial Şəbəkələr</h2>
+                                <h2 class="title" data-i18n="footer.social">Sosial Şəbəkələr</h2>
                                 <ul class="footer-nav-list">
-                                    <li><a href="https://www.facebook.com/"
-                                            data-text="Facebook"><span>Facebook</span></a></li>
-                                    <li><a href="https://x.com/?lang=en" data-text="Twitter"><span>Twitter</span></a>
-                                    </li>
-                                    <li><a href="https://www.instagram.com/"
+                                    <li><a href="https://www.instagram.com/aalmemarliq?utm_source=qr&igsh=anpmMm5qNmp3ZnI1" target="_blank" rel="noopener noreferrer"
                                             data-text="Instagram"><span>Instagram</span></a></li>
-                                    <li><a href="https://www.linkedin.com/"
-                                            data-text="LinkedIn"><span>LinkedIn</span></a></li>
-                                    <li><a href="https://www.pinterest.com/"
-                                            data-text="Pinterest"><span>Pinterest</span></a></li>
+                                    <li><a href="https://www.tiktok.com/@aa.memarilq?_r=1&_t=ZS-96zAPi5Gpe8" target="_blank" rel="noopener noreferrer"
+                                            data-text="TikTok"><span>TikTok</span></a></li>
                                 </ul>
 
                             </div>
                             <div class="footer-widget-box">
-                                <h2 class="title">Ofis</h2>
+                                <h2 class="title" data-i18n="footer.office">Ofis</h2>
                                 <div class="footer-location">
-                                    <p>Baku Expo Center, <br>
+                                    <p data-i18n="footer.location_html2" data-i18n-html>Baku Expo Center, <br>
                                         Bakı, Azərbaycan
                                     </p>
                                     <a href="tell:+994502000000">+994 50 200 00 00</a>
@@ -440,7 +440,9 @@
     <script src="assets/vandor/backtop/backToTop.js"></script>
     <script src="assets/vandor/nice-select/nice-select.js"></script>
     <!-- Template Main JS File -->
-    <script src="assets/vandor/common-js/common.js"></script>
+      <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/vandor/common-js/common.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
